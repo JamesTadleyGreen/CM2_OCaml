@@ -1,10 +1,10 @@
-# dune exec ./utility_theory.exe
+# dune exec bin/main.exe
 # OCAMLPARAM: unset
 # Workspace root: /home/pi/OCaml
-$ /usr/bin/nproc > /tmp/dunef63a5b.output 2> /dev/null
+$ /usr/bin/nproc > /tmp/dune81d886.output 2> /dev/null
 # Auto-detected concurrency: 4
 # disable binary cache
-$ /home/pi/.opam/4.12.0/bin/ocamlc.opt -config > /tmp/dune47c587.output
+$ /home/pi/.opam/4.12.0/bin/ocamlc.opt -config > /tmp/dunede3cc5.output
 # Dune context:
 #  { name = "default"
 #  ; kind = "default"
