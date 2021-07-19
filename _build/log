@@ -1,10 +1,10 @@
-# dune exec bin/main.exe
+# dune build
 # OCAMLPARAM: unset
 # Workspace root: /home/pi/OCaml
-$ /usr/bin/nproc > /tmp/dune81d886.output 2> /dev/null
+$ /usr/bin/nproc > /tmp/dune20b9ad.output 2> /dev/null
 # Auto-detected concurrency: 4
 # disable binary cache
-$ /home/pi/.opam/4.12.0/bin/ocamlc.opt -config > /tmp/dunede3cc5.output
+$ /home/pi/.opam/4.12.0/bin/ocamlc.opt -config > /tmp/dune4870e5.output
 # Dune context:
 #  { name = "default"
 #  ; kind = "default"
@@ -108,4 +108,16 @@ $ /home/pi/.opam/4.12.0/bin/ocamlc.opt -config > /tmp/dunede3cc5.output
 #      ; windows_unicode = false
 #      }
 #  }
-# Workspace root: /home/pi/OCaml
+$ (cd _build/default && /home/pi/.opam/4.12.0/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -w -49 -nopervasives -nostdlib -g -bin-annot -I lib/.utility_theory.objs/byte -no-alias-deps -opaque -o lib/.utility_theory.objs/byte/utility_theory__.cmo -c -impl lib/utility_theory__.ml-gen)
+$ (cd _build/default && /home/pi/.opam/4.12.0/bin/ocamldep.opt -modules -impl lib/utility_theory.ml) > _build/default/lib/.utility_theory.objs/utility_theory.ml.d
+$ (cd _build/default && /home/pi/.opam/4.12.0/bin/ocamldep.opt -modules -intf lib/utility_theory.mli) > _build/default/lib/.utility_theory.objs/utility_theory.mli.d
+$ (cd _build/default && /home/pi/.opam/4.12.0/bin/ocamldep.opt -modules -impl lib/integration.ml) > _build/default/lib/.utility_theory.objs/integration.ml.d
+> File "lib/integration.ml", line 16, characters 24-25:
+> 16 |   riemann_sum f a b k nn:q
+>                              ^
+> Error: Syntax error
+[2]
+$ (cd _build/default && /home/pi/.opam/4.12.0/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -I lib/.utility_theory.objs/byte -no-alias-deps -opaque -open Utility_theory__ -o lib/.utility_theory.objs/byte/utility_theory.cmi -c -intf lib/utility_theory.mli)
+$ (cd _build/default && /home/pi/.opam/4.12.0/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -I lib/.utility_theory.objs/byte -intf-suffix .ml -no-alias-deps -opaque -open Utility_theory__ -o lib/.utility_theory.objs/byte/utility_theory.cmo -c -impl lib/utility_theory.ml)
+$ (cd _build/default && /home/pi/.opam/4.12.0/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -w -49 -nopervasives -nostdlib -g -I lib/.utility_theory.objs/byte -I lib/.utility_theory.objs/native -intf-suffix .ml-gen -no-alias-deps -opaque -o lib/.utility_theory.objs/native/utility_theory__.cmx -c -impl lib/utility_theory__.ml-gen)
+$ (cd _build/default && /home/pi/.opam/4.12.0/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I lib/.utility_theory.objs/byte -I lib/.utility_theory.objs/native -intf-suffix .ml -no-alias-deps -opaque -open Utility_theory__ -o lib/.utility_theory.objs/native/utility_theory.cmx -c -impl lib/utility_theory.ml)
