@@ -1,4 +1,4 @@
-let min, max, step = (-.100., 100., 1000)
+let min, max, step = (-.1_000_000., 11_000_000., 100_000)
 
 let general_var_of_ret hi lo fx mu = Integration.integrate (fun x -> (mu -. x) *. 2. *. (fx x)) lo hi step
 

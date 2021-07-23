@@ -1,3 +1,3 @@
-(executable
- (name main)
+(executables
+ (names main measures_of_investment_risk)
  (libraries cm2 owl))

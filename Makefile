@@ -4,11 +4,12 @@
 # #
 
 DUNE 	= dune
+FILE 	=? bim/main.exe
 
 .PHONY: all install test clean uninstall format
 
 run:
-	$(DUNE) exec bin/main.exe
+	$(DUNE) exec $(FILE) 
 
 all:
 	$(DUNE) build
