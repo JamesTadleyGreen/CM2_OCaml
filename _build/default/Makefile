@@ -7,6 +7,9 @@ DUNE 	= dune
 
 .PHONY: all install test clean uninstall format
 
+run:
+	$(DUNE) exec bin/main.exe
+
 all:
 	$(DUNE) build
 
