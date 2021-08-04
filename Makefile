@@ -4,7 +4,7 @@
 # #
 
 DUNE 	= dune
-FILE 	=? bim/main.exe
+FILE 	=? bin/main.exe
 
 .PHONY: all install test clean uninstall format
 

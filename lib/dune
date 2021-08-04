@@ -1,2 +1,3 @@
 (library
- (name cm2))
+ (name cm2)
+ (libraries owl))
